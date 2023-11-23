@@ -1,0 +1,23 @@
+html{
+
+    margin: 5px;
+    border: 1px solid red;
+}
+
+body{
+
+    padding: 5px;
+    border: 1px solid green;
+}
+
+#root{
+
+    height: 100vh;
+    border: 1px solid orangered;
+
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+    gap: 20px;
+}
