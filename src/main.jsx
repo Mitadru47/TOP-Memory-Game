@@ -1,3 +1,6 @@
+// App mounting twice in dev mode · Issue #12363 - GitHub:
+// This is caused by rendering the component inside React Strict Mode.
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
