@@ -41,6 +41,8 @@ function Grid(){
                     
                     failCount = 0;
                     console.log(event.target.innerText + " - Failed!");
+                    
+                    prevValue = [];
                 }
             }
 
