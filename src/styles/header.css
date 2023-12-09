@@ -1,22 +1,25 @@
 #header{
 
     height: 33vh;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
-
-    border: 1px solid brown;
 }
 
 #heading{
+
     font-size: 5rem;
+    font-family: 'Merienda', cursive;
 }
 
-#instructions{
+#instruction{
 
-    
+    padding-top: 10px;
+
+    font-size: 0.9rem;
+    font-family: 'Merriweather', serif;
 }

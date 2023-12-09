@@ -77,8 +77,8 @@ function Grid(){
 
             <div id="scoreCard"> 
 
-                <div id="highScore">High Score: {highScore}/12</div>
-                <div id="score">Score: {score}</div>
+                <div id="score"><strong>{score}</strong></div>
+                <div id="highScore">High Score: {highScore}</div>
 
             </div>
 

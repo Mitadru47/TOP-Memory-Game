@@ -1,19 +1,19 @@
 html{
 
-    margin: 5px;
-    border: 1px solid red;
+    /* margin: 5px; */
+    /* border: 1px solid red; */
 }
 
 body{
 
-    padding: 5px;
-    border: 1px solid green;
+    margin: 0px;
+    /* border: 1px solid green; */
 }
 
 #root{
 
     height: 100vh;
-    border: 1px solid orangered;
+    /* border: 1px solid orangered; */
 
     display: flex;
     flex-direction: column;
