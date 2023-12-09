@@ -8,7 +8,7 @@ function Header(){
         <div id="header">
 
             <div id="heading">The Memory Game</div>
-            <div id="instruction">**Click on an item twice, you lose!</div>
+            <div id="instruction">**Click on an item twice to lose</div>
 
         </div>
     );

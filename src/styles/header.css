@@ -1,6 +1,6 @@
 #header{
 
-    /* height: 33vh; */
+    height: 33vh;
     border: 1px solid blue;
 
     display: flex;
@@ -10,4 +10,13 @@
     justify-content: center;
 
     border: 1px solid brown;
+}
+
+#heading{
+    font-size: 5rem;
+}
+
+#instructions{
+
+    
 }
