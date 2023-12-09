@@ -18,7 +18,10 @@ function Grid(){
     const data = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L"];
     
     const [gridData, setGridData] = React.useState([]);
-    const [gameData, setGameData] = React.useState([]); 
+    const [gameData, setGameData] = React.useState([]);
+
+    const [highScore, setHighScore] = React.useState(0);
+    const [score, setScore] = React.useState(0);
     
     useEffect(() => setGridData(choose_randomFour(data)), []);
     
@@ -32,6 +35,8 @@ function Grid(){
                 prevValue.push(event.target.innerText);
                 console.log(gameData);
 
+                setScore((prevValue) => prevValue+1);
+
             } else {
 
                 // Accounting for Double Mounting/Failure.
@@ -43,6 +48,12 @@ function Grid(){
                     console.log(event.target.innerText + " - Failed!");
                     
                     prevValue = [];
+
+                    if(score>highScore){
+                        setHighScore(score);
+                    }
+
+                    setScore(0);
                 }
             }
 
@@ -53,12 +64,23 @@ function Grid(){
 
     return (
 
-        <div id="grid">
+        <div id="board">
 
-            <Card key="0" value={gridData[0]} handleClick={clickEvent} />
-            <Card key="1" value={gridData[1]} handleClick={clickEvent} />
-            <Card key="2" value={gridData[2]} handleClick={clickEvent} />
-            <Card key="3" value={gridData[3]} handleClick={clickEvent} />
+            <div id="grid">
+
+                <Card key="0" value={gridData[0]} handleClick={clickEvent} />
+                <Card key="1" value={gridData[1]} handleClick={clickEvent} />
+                <Card key="2" value={gridData[2]} handleClick={clickEvent} />
+                <Card key="3" value={gridData[3]} handleClick={clickEvent} />
+
+            </div>
+
+            <div id="scoreCard"> 
+
+                <div id="highScore">High Score: {highScore}/12</div>
+                <div id="score">Score: {score}</div>
+
+            </div>
 
         </div>
 

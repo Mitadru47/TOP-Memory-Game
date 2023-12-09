@@ -4,17 +4,10 @@
     border: 1px solid blue;
 
     display: flex;
+    flex-direction: column;
+
+    align-items: center;
     justify-content: center;
-}
 
-#headerSideA{
-
-    /* width: 75%; */
-    border: 1px solid brown;
-}
-
-#headerSideB{
-
-    /* width: 25%; */
     border: 1px solid brown;
 }

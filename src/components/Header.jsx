@@ -1,4 +1,5 @@
 import "../styles/header.css";
+import React from "react";
 
 function Header(){
 
@@ -6,19 +7,8 @@ function Header(){
 
         <div id="header">
 
-            <div id="headerSideA"> 
-
-                <div id="heading">The Memory Game</div>
-                <div id="instruction">**Click on an item twice, you lose!</div>
-
-            </div>
-
-            <div id="headerSideB"> 
-
-                <div id="highScore">High Score:</div>
-                <div id="score">Score:</div>
-
-            </div>
+            <div id="heading">The Memory Game</div>
+            <div id="instruction">**Click on an item twice, you lose!</div>
 
         </div>
     );

@@ -1,3 +1,13 @@
+#board{
+
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
 #grid{
 
     border: 1px solid green;
@@ -18,4 +28,15 @@
 
 .cards:hover{
     background-color: yellowgreen;
+}
+
+#scoreCard{
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid purple;
 }
